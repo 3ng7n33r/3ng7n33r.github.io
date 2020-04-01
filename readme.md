@@ -1,8 +1,6 @@
-# Another Kerbal Calculator
+# FCC-Tribute page
 
-Another Kerbal Calculator is a tool to simplify predictions about a rockets performance in KSP
-
-I literally started working on this today (29.03.2020) and I'm not a seasoned programmer so this will probably be done around 20021 (not a typo).
+Website created for the FCC-Responsive web design certification
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
