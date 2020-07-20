@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1.1rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+@font-face {
+    font-family: din6776;/* Maybe try Osifont */
+    src: url(../font/din6776.ttf) format("truetype");
+}
+
+@media screen and (max-width: 1580px) {
+    #manl { display: none; }
+}
+
+@media screen and (max-width: 1210px) {
+    #manr { display: none; }
+    #man2 { display: none; }
+    #man { display: inline-flex; }
+    #BOMhead { font-size: 1rem; }
+}
+
+@media screen and (min-width: 1210px) {
+    #man { display: none; }
+}
+
+#top {
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+}
+#bottom {
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+}
+#top,
+#bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+
+#manimg {
+    height: 75vh;
+}
+
+#brainimg {
+    width: 30vw;
+}
+
+#handsimg {
+    width: 35vw;
+}
+
+#mapimg {
+    width: 35vw;
+}
+
+#heartimg {
+    width: 25vw;
+}
+
+#BOMhead {
+    font-size: 1.5rem;
+}
+
+#Description {
+    font-weight: bold;
+}
+
+
+#topBtn {
+    position: fixed; /* Fixed/sticky position */
+    top: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(140, 140, 140, 0.4); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#topBtn:hover {
+    background-color: #555555; /* Add a dark-grey background on hover */
+}
+
+#HStable,
+#UStable,
+#FORDtable,
+#TSStable,
+#APCtable,
+#DELTAtable {
+    display: none;
+}
+
+#HSlogo { width: inherit; }
+
+
+
+.hover:hover {
+    background-color: rgba(167, 177, 189);
+    color: black;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.page_section {
+    height: 100vh;
+    padding-top: 3vh;
+}
+
+.column {
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-between;
+}
+
+body {
+    color: white;
+    font-family: din6776;
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    background-image: url(../img/Body_6.png);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    padding: 0 5vw 10vh 5vw;
+}
+table {
+    margin-left: auto;
+    background-color: rgba(0, 97, 182, 0.7);
+}
+
+table,
+th,
+td {
+    border: 1px solid #cccccc;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(140, 140, 140, 0.4);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1);}
+h2 { font-size: var(--fs-h2);}
+h3 { font-size: var(--fs-h3);}
