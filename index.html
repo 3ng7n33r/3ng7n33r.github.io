@@ -1,458 +1,435 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Portfolio: Maximilian Blacher</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio page">
-    <meta name="author" content="Maximilian Blacher">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!--Normalize website for multiple browsers-->
-    <script src="js/app.js"></script>
-</head>
-
-<body>
-    <button onclick='scrollto("Assembly")' id="topBtn" title="Go to top">Top</button>
-    <div id="top"><img src="img/header_6.png" style="width: 100vw" alt=""></div>
-    <!--Introduction-->
-    <section onscroll="scrollFunction()" class="page_section" id="Assembly">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Maximilian Blacher</title>
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this template -->
+        <link href="css/agency.min.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Made with Bootstrap</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+        <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Who am I?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in">Welcome!</div>
+                    <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Let me tell you about me</a>
+                </div>
+            </div>
+        </header>
+        <!-- Portfolio Grid -->
+        <section class="bg-light page-section" id="portfolio">
             <div class="container">
                 <div class="row">
-                    <h1 id="Introduction title">
-                        Assembly
-                    </h1>
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Who am I?</h2>
+                        <h3 class="section-subheading text-muted">Driven Professional and Enthusiastic Hobbyist</h3>
+                    </div>
                 </div>
-            <div class="row">
-                <div id="manl"><img id="manimg" src="img/Max_lside.png" alt=""></div>
-                <div id="man2"><img id="manimg" src="img/Max_BOM2.png" alt=""></div>
-                <div id="man"><img id="manimg" src="img/Max_BOM.png" alt=""></div>
-                <div id="manr"><img id="manimg" src="img/Max_rsidebom.png" alt=""></div>
-                <div class="column">
-                    <table id="BOM" style="width:35vw" align="right">
-                        <thead>
-                          <tr>
-                            <th id="BOMhead" colspan="3">Bill of Materials</th>
-                          </tr>
-                          <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                          </tr>
-                        </thead>
-                          <tr class="hover" onclick='scrollto("Head")'>
-                            <th>1</th>
-                            <td>Head</td>
-                            <td>Education</td>
-                          </tr>
-                          <tr class="hover" onclick='scrollto("Hands")'>
-                            <th>2</th>
-                            <td>Hands</td>
-                            <td>Professional Experience</td>
-                          </tr>
-                          <tr class="hover" onclick='scrollto("Feet")'>
-                            <th>3</th>
-                            <td>Feet</td>
-                            <td>Location, Travels</td>
-                          </tr>
-                          <tr class="hover" onclick='scrollto("Heart")'>
-                            <th>4</th>
-                            <td>Heart</td>
-                            <td>Hobbies</th>
-                          </tr>
-                      </table>
-                    <table id="text" style="width:35vw" align="right">
-                        <thead>
-                          <tr>
-                            <th id="texthead" colspan="6">Software Developer V 1.0</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                          <td id="Description">Version</td>
-                          <td id="Description" colspan="3">Name</td>
-                          <td id="Description" colspan="3">Date</td>
-                        </tr>
-                        <tr>
-                          <td>V 1.0</td>
-                          <td colspan="3">Maximilian Blacher</td>
-                          <td colspan="3">03.1987</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="3">Location</td>
-                          <td id="Description" colspan="3">Looking for a job as</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Rennes, France</td>
-                          <td colspan="3">Programmer</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Engineer</h4>
+                            <p class="text-muted">Mechanical engineer with 4+ years of industry experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/yucel-moran-Tfrl8rH-QoU-unsplash_thumb.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Programmer</h4>
+                            <p class="text-muted">Junior programmer making his first steps on a new path</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Photographer</h4>
+                            <p class="text-muted">Hobby photographer with a heart for travelling</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- About -->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">My professional Timeline</h2>
+                        <h3 class="section-subheading text-muted">Mechanical Design Engineer with 4+ years of professional experience on the path of becoming a programmer</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/UAS.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2010-2014</h4>
+                                        <h4 class="subheading">Mechanical engineering student at the UAS Mannheim</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            B.Sc. in mechanical engineering
+                  <br/>Head of the suspension department of the FSAE team Delta Racing
 
-    <section class="page_section" id="Head">
 
-        <div class="container">
-            <div class="row">
-                <h1 id="Introduction title">
-                    Education
-                </h1>
-            </div>
-            <div class="row">
-                <div id="brain"><img id="brainimg" src="img/Brain.png" alt=""></div>
-                <div class="column">
-                    <table id="Edu" style="width:35vw" align="right">
-                        <thead>
-                          <tr>
-                            <th>Timespan</th>
-                            <th>Place</th>
-                            <th>Description</th>
-                          </tr>
-                        </thead>
-                          <tr class="hover" onmouseover='makevis("HStable")' onmouseout='makeinvis("HStable")'>
-                            <th>09.2010 – 11.2014</th>
-                            <td>University of Applied Sciences Mannheim</td>
-                            <td>Engineering Degree</td>
-                          </tr>
-                          <tr class="hover" onmouseover='makevis("UStable")' onmouseout='makeinvis("UStable")'>
-                            <th>10.2012 – 01.2013</th>
-                            <td>University of Maryland, USA</td>
-                            <td>Internship</td>
-                          </tr>
-                          <tr class="hover" onmouseover='makevis("FORDtable")' onmouseout='makeinvis("FORDtable")'>
-                            <th>08.2004 – 01.2008</th>
-                            <td>Ford Kohlhoff</td>
-                            <td>Training</td>
-                          </tr>
-                    </table>
-                    <table id="HStable" style="width:35vw" align="right">
-                      <thead>
-                        <tr>
-                          <th id="texthead" colspan="6"><img style="width:20vw" src="img/HSlogo.png" alt=""></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td id="Description" colspan="3">Field</td>
-                          <td id="Description" colspan="2">Specialization</td>
-                          <td id="Description" colspan="2">Grade</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Mechanical Engineering</td>
-                          <td colspan="2">Design</td>
-                          <td colspan="2">2.0</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="5">Thesis</td>
-                          <td id="Description">Grade</td>
-                        </tr>
-                        <tr>
-                          <td colspan="5">Design, evaluation and optimization of contour gaps in exhaust gas turbochargers (MatLab)</td>
-                          <td>1.0</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="6">Extracurricular Activities</td>
-                        </tr>
-                        <tr>
-                          <td colspan="6"><ul>
-                            <li>Head of Formula Student suspension department</li>
-                            <li>Tutor for mechanical design</li>
-                            <li>Intern at Bopp & Reuther and Borg Warner</li>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table id="UStable" style="width:35vw" align="right">
-                      <thead>
-                        <tr>
-                          <th id="texthead" colspan="6"><img style="width:20vw" src="img/USlogo.png" alt=""></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td id="Description" colspan="3">Faculty</td>
-                          <td id="Description" colspan="3">Laboratory</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Mechanical Engineering</td>
-                          <td colspan="3">Dynamic Effects</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="6">Final Report</td>
-                        </tr>
-                        <tr>
-                          <td colspan="6">Experimental study of the influence of various soil conditions on the impulse delivered by buried explosives</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table id="FORDtable" style="width:35vw" align="right">
-                      <thead>
-                        <tr>
-                          <th id="texthead" colspan="6"><img style="width:20vw" src="img/FORDlogo.png" alt=""></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td id="Description" colspan="3">Training as</td>
-                          <td id="Description" colspan="3">Completed</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Car Mechanic</td>
-                          <td colspan="3">Yes</td>
-                        </tr>
-                      </tbody>
-                    </table>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/APC.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>11.2014 - 06.2017</h4>
+                                        <h4 class="subheading">Pankl APC Turbosystems</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">My first job as mechanical Engineer designing high performance, electrically assisted turbochargers</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/TSS.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>08.2017-06.2019</h4>
+                                        <h4 class="subheading">Trelleborg Sealing Solutions</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Working with clients and customers from all over the world. Providing sealing solutions for the next generation of electric cars.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/travel.png" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>07.2019 - 01.2020</h4>
+                                        <h4 class="subheading">Travelling the world</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Fulfilling my dream</p>
+                                    </div>
+                                </div>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/profile.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Now</h4>
+                                        <h4 class="subheading">Your next programmer</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Ready for new challenges</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>
+                                        Be Part
+                  <br>
+                                        Of The
+                  <br>Story!
+
+
+
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-
-    <section class="page_section" id="Hands">
-
-        <div class="container">
-            <div class="row">
-                <h1 id="Introduction title">
-                    Work Experience
-                </h1>
+        </section>
+        <!-- Contact
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Contact</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone (optional)">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div id="Hands"><img id="handsimg" src="img/Hands.png" alt=""></div>
-                <div class="column">
-                    <table id="BOM" style="width:35vw" align="right">
-                    <thead>
-                      <tr>
-                        <th>Timespan</th>
-                        <th>Place</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                      <tr class="hover" onmouseover='makevis("TSStable")' onmouseout='makeinvis("TSStable")'>
-                        <th>08.2017 – 06.2019</th>
-                        <td>Trelleborg Sealing Solutions Germany GmbH</td>
-                        <td>Design Engineer for sealing systems</td>
-                      </tr>
-                      <tr class="hover" onmouseover='makevis("APCtable")' onmouseout='makeinvis("APCtable")'>
-                        <th>11.2014 – 06.2017</th>
-                        <td>Pankl APC Turbosystems GmbH</td>
-                        <td>Design Engineer for high performance turbochargers</td>
-                      </tr>
-                      <tr class="hover" onmouseover='makevis("DELTAtable")' onmouseout='makeinvis("DELTAtable")'>
-                        <th>10.2011 – 08.2014</th>
-                        <td>Formula Student Team Delta Racing Mannheim e.V.</td>
-                        <td>Head of suspension department</td>
-                      </tr>
-                    </table>
-                    <table id="TSStable" style="width:35vw" align="right">
-                      <thead>
-                        <tr>
-                          <th id="texthead" colspan="6"><img style="width:15vw" src="img/TSSlogo.png" alt=""></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td id="Description" colspan="3">Department</td>
-                          <td id="Description" colspan="3">Title</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Lead Group Business Development Europe</td>
-                          <td colspan="3">Design Engineer</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="3">Focus</td>
-                          <td id="Description" colspan="3">Countries</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Develop the e-mobility market segment </td>
-                          <td colspan="3">Austria, France, Spain, Switzerland, Turkey</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="6">Activities</td>
-                        </tr>
-                        <tr>
-                          <td colspan="6"><ul>
-                            <li>2D and 3D Design using NX</li>
-                            <li>Creation, coordination and maintenance of datasets using Teamcenter</li>
-                            <li>Definition of simulation projects including interpretation and communication of
-                                results</li>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table id="APCtable" style="width:35vw" align="right">
-                      <thead>
-                        <tr>
-                          <th id="texthead" colspan="6"><img style="width:20vw" src="img/APClogo.png" alt=""></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td id="Description" colspan="3">Department</td>
-                          <td id="Description" colspan="3">Title</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Engineering</td>
-                          <td colspan="3">Design Engineer</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="3">Focus</td>
-                          <td id="Description" colspan="3">Markets</td>
-                        </tr>
-                        <tr>
-                          <td colspan="3">Standard and electrified, high-performance turbochargers</td>
-                          <td colspan="3">Formula 1, LMP-1, Small engine airplanes</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="6">Activities</td>
-                        </tr>
-                        <tr>
-                          <td colspan="6"><ul>
-                            <li>2D and 3D Design using Creo</li>
-                            <li>GD&T analysis and optimization with Excel</li>
-                            <li>Head engineer for a small aircraft turbocharger (EU project Clean Sky 2)</li>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table id="DELTAtable" style="width:35vw" align="right">
-                      <thead>
-                        <tr>
-                          <th id="texthead" colspan="6"><img style="width:15vw" src="img/DELTAlogo.png" alt=""></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td id="Description" colspan="2">Title</td>
-                          <td id="Description" colspan="4">Department</td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">Head of Department</td>
-                          <td colspan="4">Suspension</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="2">Focus</td>
-                          <td id="Description" colspan="4">Software</td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">Develop, manufacture, assemble and test a suspension system for a combustion and electric car</td>
-                          <td colspan="4">Solidworks, OptimumK</td>
-                        </tr>
-                        <tr>
-                          <td id="Description" colspan="6">Events</td>
-                        </tr>
-                        <tr>
-                          <td colspan="6">
-                            <ul>
-                                <li>Formula Student Germany: 2012, 2013, 2014</li>
-                                <li>Formula Student Austria: 2012, 2014</li>
-                                <li>Formula Student Spain: 2013</li>
-                                <li>Formula Student Czechia: 2014</li>
+        </section> -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy;Maximilian Blacher 2020</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/maximilian-blacher/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals -->
+        <!-- Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2 class="text-uppercase">Mechanical engineer</h2>
+                                    <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                                    <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                                    <p>
+                                        After having worked as a trained car mechanic for 6 months, I wanted to go further. To not just fix the cars but build them (to be honest, I was not a gifted mechanic either). During university I started as soon as possible to gain real life experience. I joined the Formula Student team <a href="https://www.delta-racing.de/">Delta Racing Mannheim e.V.</a>
+                                        and developed a new suspension for the electric and the combustion car.
+                  <br/>
+                                        My first job after graduation was at Pankl APC (now <a href="https://pankl.com/de/produkte/motor-turbosysteme/">Pankl Turbosystems</a>
+                                        ) where I was part of the Design team for multiple high performance, electrically assisted racecar applications.
+                  <br/>After two and a half years, I joined Trelleborg Sealing Solutions in Stuttgart where I designed prototype designs of high performance sealings for our national and international costumers.
+
+
+
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>Date: 2010 - 2019</li>
+                                        <li>
+</br></li><li>Employers:
+
+
+
+
+
+<li>Delta-Racing Mannheim (Student)</li>
+<li>Pankl APC</li>
+<li>Trelleborg Sealing Solutions Germany</li>
+</ul>
+<button class="btn btn-primary" data-dismiss="modal" type="button">
+    <i class="fas fa-times"></i>
+    Close Project
+
+
+
+</button>
+</div></div></div></div></div></div></div>
+<!-- Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-uppercase">Programmer</h2>
+                            <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/yucel-moran-Tfrl8rH-QoU-unsplash.jpg" alt="">
+                            <p>
+                                Having had an interest in programming since my C++ lectures in University, I decided that now is the time to make this my new carreer. I am learning Html, CSS and JS on freecodecamp.org to learn how to create an online presence to present and market my skills.
+                  <br/>
+                                My main focus however is machine learning. After having finished my thesis in MatLab, I already have experiences with the language. I have recently finished Andrew Ng's Stanford Course in machine learning (to be found on <a href="https://www.coursera.org/learn/machine-learning">Coursera </a>
+                                ) and further my knowledge by actively learning Python to be able to better compete on Kaggle.
+
+
+
+                            </p>
+                            <ul class="list-inline">
+                                <!--<li>Date: Now</li>
+                  <li>Client: You</li> -->
+                                <li>
+                                    Certificates: <a href="https://coursera.org/share/042f4465d7a9ee062321561d26952284">Machine Learning by Stanford University</a>
+                                </li>
+                                <li>Category: Machine Learning</li>
                             </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times"></i>
+                                Close Project
+
+
+
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </section>
-
-    <section class="page_section" id="Feet">
-
-        <div class="container">
-            <div class="row">
-                <h1 id="Introduction title">
-                    Location
-                </h1>
+    </div>
+</div>
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
             </div>
-            <div class="row">
-                <div id="map"><img id="mapimg" src="img/Map2.png" alt=""></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-uppercase">Photographer</h2>
+                            <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                            <p>I started taking photography more serious in October 2018. I travelled to Iran to experience a country and culture a little off the beaten path and I wanted to be sure to be able to bring my impressions home with me. Since then, I always keep my camera with me when exploring new places.</p>
+                            <ul class="list-inline">
+                                <li>Date: since 11.2018</li>
+                                <li>
+                                    <a href="https://500px.com/3ng7n33r">Find me on 500px </a>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times"></i>
+                                Close Project
 
-                <table id="BOM" style="width:35vw" align="right">
-                    <thead>
-                        <tr>
-                        <th>Timespan</th>
-                        <th>City</th>
-                        <th>Country</th>
-                        </tr>
-                    </thead>
-                        <tr>
-                            <th>01.2020 - now</th>
-                            <td>Rennes</td>
-                            <td>France</td>
-                        </tr>
-                        <tr>
-                            <th>07.2019 - 01.2020</th>
-                            <td colspan="2">Travelling from Russia to Vietnam by train</td>
-                        </tr>
-                        <tr>
-                            <th>11.2017 - 06.2019</th>
-                            <td>Stuttgart</td>
-                            <td>Germany</td>
-                        </tr>
-                        <tr>
-                            <th>10.2012 - 01.2013</th>
-                            <td>College Park</td>
-                            <td>USA</td>
-                        </tr>
-                        <tr>
-                            <th>09.2011 – 10.2012<br>
-                                01.2013 - 11.2017
-                            </th>
-                            <td>Mannheim</td>
-                            <td>Germany</td>
-                        </tr>
-                        <tr>
-                            <th>03.1987 – 09.2011</th>
-                            <td>Ludwigshafen am Rhein</td>
-                            <td>Germany</td>
-                        </tr>
-                </table>
+
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </section>
-
-    <section class="page_section" id="Heart">
-
-        <div class="container">
-            <div class="row">
-                <h1 id="Introduction title">
-                    Hobbies
-                </h1>
-            </div>
-            <div class="row">
-                <div id="Heart"><img id="heartimg" src="img/heart.png" alt=""></div>
-
-                <table id="BOM" style="width:35vw" align="right">
-                        <tr>
-                            <th>Photography</th>
-                            <td>Rennes</td>
-                            <td>France</td>
-                        </tr>
-                        <tr>
-                            <th>Travelling</th>
-                            <td colspan="2">Travelling from Russia to Vietnam by train</td>
-                        </tr>
-                </table>
-            </div>
-        </div>
-
-    </section>
-    <!-- Footer -->
-    <footer>
-        <a href="mailto:m.blacher@web.de" class="footer__link">m.blacher@web.de</a>
-        <ul class="social-list">
-            <li class="social-list__item"><a class="social-list__link" href="https://github.com">Git</a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://LinkedIn.com">LinkedIn</a></li>
-        </ul>
-    </footer>
-        <div id="bottom"><img src="img/footer_6.png" style="width: 100vw" alt=""></div>
-</body>
-
-</html>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Contact form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/agency.min.js"></script>
+</body></html>
+<!-- credit badge:
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@yucelmoran?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Yucel Moran"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Yucel Moran</span></a>
+-->
