@@ -169,6 +169,7 @@ body {
     background-size: 100% auto;
     background-attachment: fixed;
     padding: 0 5vw 10vh 5vw;
+    min-width: 680px;
 }
 table {
     margin-left: auto;
