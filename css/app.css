@@ -181,6 +181,7 @@
 .page_section {
     height: 100vh;
     padding-top: 3vh;
+    scroll-snap-align: start;
 }
 
 .column {
@@ -188,6 +189,10 @@
     padding: 0;
     justify-content: space-between;
 }
+
+html {
+    scroll-snap-type: y mandatory;
+  }
 
 body {
     color: white;
@@ -199,6 +204,7 @@ body {
     background-size: 100% auto;
     background-attachment: fixed;
     padding: 0 5vw 10vh 5vw;
+    scroll-snap-type: y mandatory;
 }
 
 table {
