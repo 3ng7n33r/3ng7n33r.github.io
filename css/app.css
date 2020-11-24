@@ -43,7 +43,7 @@
     }
 
     #man {
-        display: inline-flex;
+        display: block;
     }
 
     #BOMhead {
@@ -53,6 +53,12 @@
 
 @media screen and (min-width: 1210px) {
     #man {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #developertable {
         display: none;
     }
 }
@@ -142,13 +148,20 @@
     width: inherit;
 }
 
+
 .Description {
     font-weight: bold;
 }
 
 .manimg {
-    height: 75vh;
+    display: block;
+    max-height: 75vh;
+    max-width: 40vw;
+    width: auto;
+    height: auto;
 }
+
+
 
 .hover:hover {
     background-color: rgba(167, 177, 189);
@@ -166,7 +179,6 @@
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
     margin-right: -15px;
     margin-left: -15px;
@@ -203,23 +215,21 @@ body {
     background-repeat: repeat-y;
     background-size: 100% auto;
     background-attachment: fixed;
-    padding: 0 5vw 10vh 5vw;
+    padding: 0 0vw 10vh 5vw;
     scroll-snap-type: y mandatory;
 }
 
 table {
     margin-left: auto;
     background-color: rgba(0, 97, 182, 0.7);
+    border: 1px solid #cccccc;
+    max-width: 600px;
+    width: 35vw;
 }
 
-table,
 th,
 td {
     border: 1px solid #cccccc;
-}
-
-th,
-td {
     padding: 5px;
 }
 
