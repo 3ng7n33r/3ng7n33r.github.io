@@ -57,9 +57,18 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-    #developertable {
-        display: none;
+@media screen and (max-width: 650px) {
+    #developertable,
+    #HStable,
+    #UStable,
+    #TSStable,
+    #FORDtable,
+    #APCtable,
+    #DELTAtable,
+    #pre500,
+    #prepolar,
+    #precode  {
+        display: none !important;
     }
 }
 
